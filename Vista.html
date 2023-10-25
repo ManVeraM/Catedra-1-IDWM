@@ -4,8 +4,341 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    
+    <!-- Datos del estudiante -->
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+
+            <th scope="col">Nombres</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">RUT</th>
+            <th scope="col">Asignatura</th>
+            <th scope="col">Fecha</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+
+            <td>Manuel Alejandro</td>
+            <td>Vera Martinez</td>
+            <td>19.952.649-9</td>
+            <td>Introduccion al desarrollo web/movil</td>
+            <td>25-10-2023</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <!-- Titulo -->
+      <div>
+        <h1 class="text-center">LISTA PRODUCTOS</h1>
+      </div>
+      
+      <!-- se crea un contenedor con filas y columnas -->
+    <div class="container text-center">
+        <div class="row">
+        <div class="col">
+            <!-- en cada posicion colocamos un objeto card -->
+            <div class="card" style="width: 18rem;">
+                <!-- dentro del objeto card se coloca una imagen, su titulo y precio. -->
+                <img src="assets/410152-360-360.jfif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Comino molido</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Precio: 1000$</li>
+        
+                </ul>
+                <!-- Finalmente debajo de la card se coloca un boton acordeon que permite ver los detalles -->
+                <div class="card-body">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Detalles
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore est distinctio repellat in ut, et non veritatis ducimus incidunt quo laudantium ratione dolor. Neque accusamus deleniti obcaecati maxime impedit.
+                            </div>
+                          </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+        </div>
+        <!-- repetimos el proceso 10 veces -->
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Castaña-de-caju-100-g.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Castañas de caju</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Precio: 2000$</li>
+        
+                </ul>
+                <div class="card-body">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Detalles
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore est distinctio repellat in ut, et non veritatis ducimus incidunt quo laudantium ratione dolor. Neque accusamus deleniti obcaecati maxime impedit.
+                            </div>
+                          </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+        </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Ciboulette-en-sobre-2-g-1-160576820.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ciboulette molido</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Precio: 3000$</li>
+        
+                </ul>
+                <div class="card-body">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Detalles
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore est distinctio repellat in ut, et non veritatis ducimus incidunt quo laudantium ratione dolor. Neque accusamus deleniti obcaecati maxime impedit.
+                            </div>
+                          </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Endulzante-sachet-stevia-100-un-1-159597551.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Splenda Stevia</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Precio: 1000$</li>
+        
+                </ul>
+                <div class="card-body">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Detalles
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore est distinctio repellat in ut, et non veritatis ducimus incidunt quo laudantium ratione dolor. Neque accusamus deleniti obcaecati maxime impedit.
+                            </div>
+                          </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Mix-italiano-Jumbo-pote-150-g-1-57509692.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Mix italiano</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Precio: 1000$</li>
+        
+                </ul>
+                <div class="card-body">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Detalles
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore est distinctio repellat in ut, et non veritatis ducimus incidunt quo laudantium ratione dolor. Neque accusamus deleniti obcaecati maxime impedit.
+                            </div>
+                          </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Nuez-cuarto-700-g-1-150161164.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nuez cuarto</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Precio: 1000$</li>
+        
+                </ul>
+                <div class="card-body">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Detalles
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore est distinctio repellat in ut, et non veritatis ducimus incidunt quo laudantium ratione dolor. Neque accusamus deleniti obcaecati maxime impedit.
+                            </div>
+                          </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Papa-malla-2-kg.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Malla de papa</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Precio: 1000$</li>
+        
+                </ul>
+                <div class="card-body">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Detalles
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore est distinctio repellat in ut, et non veritatis ducimus incidunt quo laudantium ratione dolor. Neque accusamus deleniti obcaecati maxime impedit.
+                            </div>
+                          </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Principal-10011.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Huevo</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Precio: 1000$</li>
+        
+                </ul>
+                <div class="card-body">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Detalles
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore est distinctio repellat in ut, et non veritatis ducimus incidunt quo laudantium ratione dolor. Neque accusamus deleniti obcaecati maxime impedit.
+                            </div>
+                          </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Principal-35666.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Soda Caustica</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Precio: 1000$</li>
+        
+                </ul>
+                <div class="card-body">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Detalles
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore est distinctio repellat in ut, et non veritatis ducimus incidunt quo laudantium ratione dolor. Neque accusamus deleniti obcaecati maxime impedit.
+                            </div>
+                          </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Principal-1241.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Comino molido</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Precio: 1000$</li>
+        
+                </ul>
+                <div class="card-body">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Detalles
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore est distinctio repellat in ut, et non veritatis ducimus incidunt quo laudantium ratione dolor. Neque accusamus deleniti obcaecati maxime impedit.
+                            </div>
+                          </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
